@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-family-fixed: "Courier New", monospace;
+  font-weight: 300;
+  letter-spacing: 0.11rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(213, 222, 232, 1);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

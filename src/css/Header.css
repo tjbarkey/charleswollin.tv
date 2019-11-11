@@ -1,0 +1,113 @@
+.header {
+  display: inline-block;
+  background-color: rgba(3, 70, 148, 1);
+  width: 100%;
+  padding: 0;
+}
+
+.icn {
+  height: 20px;
+  position: relative;
+  transform: translateY(-2px);
+  margin-right: 0.1em;
+}
+
+.header ul {
+  margin: 0 6px 0 0;
+  float: right;
+}
+.header h2 {
+  display: inline-block;
+  float: left;
+  color: white;
+  margin: 0;
+  padding: 0.28em;
+}
+.h-wrapper {
+  max-width: 1150px;
+  margin: auto;
+  width: 97%;
+}
+.main-nav a {
+  font-size: 0.95em;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  padding: 0.78em 0.63em 0.78em 0.63em;
+  transition: 0.2s;
+  margin-left: 0.25em;
+}
+
+.main-nav a:hover,
+.main-nav .active {
+  color: black;
+  background: lightgray;
+}
+
+.main-nav li {
+  display: inline-block;
+}
+@media screen and (min-width: 738px) {
+  .top-bar {
+    display: inline-block;
+  }
+  .hamburger {
+    display: none;
+  }
+  .nav-wrapper {
+    display: inline-block;
+    float: right;
+  }
+}
+@media screen and (max-width: 737px) {
+  .nav-is-invisible {
+    display: none;
+  }
+
+  .main-nav li {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin: 0px;
+  }
+  .hamburger {
+    float: right;
+    margin: 0.5em;
+    color: white;
+  }
+  .top-bar {
+    display: block;
+    height: 45px;
+    width: 100%;
+  }
+  .header h2 {
+    position: relative;
+    margin: auto;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+  }
+  .main-nav a {
+    display: block;
+    float: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    margin: 0px;
+  }
+
+  .header ul {
+    width: 100%;
+    float: none;
+    margin: 0px;
+    display: block;
+    background-color: darkgrey;
+  }
+
+  .header div {
+    width: 100%;
+    margin: 0;
+  }
+}

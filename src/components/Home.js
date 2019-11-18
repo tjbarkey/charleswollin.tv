@@ -1,27 +1,14 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Header from "./Header";
+import HomeSpinner from "./HomeSpinner";
+import HomeLogo from "./HomeLogo";
 import Loading from "./Loading";
-import HomePattern from "./HomePattern";
-import HomeBall from "./HomeBall";
-import HomeDesk from "./HomeDesk";
-import { useHistory } from "react-router-dom";
 import "../css/Home.css";
 
 const Home = () => {
   //creating local state to hold API data from CMS backend
   const [homeState, setHomeState] = useState({ loading: true });
-  const [clickedState, setClickedState] = useState({ clicked: false });
-  let history = useHistory();
-
-  const clickedAndKicked = e => {
-    let extension = `/${e.target.textContent}`;
-    setClickedState({ clicked: true });
-
-    setTimeout(function() {
-      history.push(extension);
-    }, 1000);
-  };
 
   useEffect(() => {
     //query for API
@@ -55,21 +42,19 @@ const Home = () => {
   } else {
     return (
       <div>
-        <div className="home-body">
-          <div className="pattern">
-            <div className="home-pattern">
-              <HomePattern />
-            </div>
-            <img
-              className={`home-img${clickedState.clicked ? " fly-away" : ""}`}
-              src={homeState.data.mainImage.url}
-              alt="main"
-            />
-            <div className={`desk${clickedState.clicked ? " fly-away" : ""}`}>
-              <HomeDesk />
-            </div>
-            <div className={`ball${clickedState.clicked ? " goal" : ""}`}>
-              <HomeBall clicked={clickedAndKicked} />
+        <Header className="head" />
+        <div className="homebody">
+          <img
+            src={homeState.data.mainImage.url}
+            className="home-image"
+            alt="home"
+          />
+          <div className="overlay2">
+            <HomeLogo />
+          </div>
+          <div className="overlay">
+            <div className="spin">
+              <HomeSpinner opacity="50%" />
             </div>
           </div>
         </div>

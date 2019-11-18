@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
+import SutroA from "./SutroA";
 import "../css/Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -19,8 +20,9 @@ const Header = () => {
           <Link to="/">
             <h2>
               Ch
-              <FontAwesomeIcon className="icn" icon="broadcast-tower" />
-              rles W<FontAwesomeIcon className="icn" icon="futbol" />
+              <FontAwesomeIcon className="icnh" icon="broadcast-tower" />
+              rles W
+              <FontAwesomeIcon className="icnh" icon="futbol" />
               llin
             </h2>
           </Link>

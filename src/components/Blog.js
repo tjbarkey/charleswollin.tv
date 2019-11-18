@@ -4,6 +4,7 @@ import Header from "./Header";
 import PostList from "./posts/PostList";
 import Loading from "./Loading";
 import ReactHtmlParser from "react-html-parser";
+import Footer from "./Footer";
 
 const Blog = () => {
   const [blogState, setBlogState] = useState({ loading: true, data: [] });
@@ -83,6 +84,7 @@ const Blog = () => {
             <PostList data={blogState} />
           </div>
         </div>
+        <Footer />
       </div>
     );
   }

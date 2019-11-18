@@ -5,6 +5,7 @@ import NotFound from "./NotFound";
 import Loading from "./Loading";
 import { useRouteMatch } from "react-router-dom";
 import ReactHtmlParser from "react-html-parser";
+import Footer from "./Footer";
 
 const BlogPost = props => {
   const [blogPostState, setBlogPostState] = useState({
@@ -82,6 +83,7 @@ const BlogPost = props => {
             {ReactHtmlParser(blogPostState.data.blogPostContent)}
           </div>
         </div>
+        <Footer />
       </div>
     );
   }

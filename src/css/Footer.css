@@ -1,0 +1,53 @@
+.footer {
+  display: block;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.icn {
+  font-size: 14px;
+  position: relative;
+  transform: translateY(2.5px);
+}
+.icns {
+  font-size: 30px;
+  position: relative;
+  transform: translateY(1px);
+  margin: 0 1em;
+}
+
+.f-wrapper {
+  max-width: 1150px;
+  width: 97%;
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+}
+
+.f-wrapper div {
+  width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+}
+.f-wrapper p {
+  width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+}

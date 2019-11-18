@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import "../css/Contact.css";
 import ReactHtmlParser from "react-html-parser";
+import Footer from "./Footer";
 
 const Contact = () => {
   const [contactState, setContactState] = useState({ loading: true, data: [] });
@@ -66,6 +67,7 @@ const Contact = () => {
           </h1>
           <p>{ReactHtmlParser(contactState.data.pageContent)}</p>
         </div>
+        <Footer />
       </div>
     );
   }

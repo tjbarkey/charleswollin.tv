@@ -3,6 +3,7 @@ import axios from "axios";
 import Header from "./Header";
 import Loading from "./Loading";
 import ReactHtmlParser from "react-html-parser";
+import Footer from "./Footer";
 
 const About = () => {
   const [aboutState, setAboutState] = useState({ loading: true, data: [] });
@@ -63,6 +64,7 @@ const About = () => {
             {ReactHtmlParser(aboutState.data.pageContent)}
           </div>
         </div>
+        <Footer />
       </div>
     );
   }

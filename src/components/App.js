@@ -16,17 +16,28 @@ import BlogTagged from "./BlogTagged";
 import BlogPost from "./BlogPost";
 import WorldCup from "./WorldCup";
 import ReactGA from "react-ga";
+import Header from "./Header";
+import Footer from "./Footer";
 import { createBrowserHistory } from "history";
 import "../css/App.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import {
+  faMicrophoneAlt,
   faFutbol,
   faBroadcastTower,
   faBars
 } from "@fortawesome/free-solid-svg-icons";
+import { faCopyright } from "@fortawesome/free-regular-svg-icons";
 
-library.add(fab, faFutbol, faBroadcastTower, faBars);
+library.add(
+  fab,
+  faCopyright,
+  faFutbol,
+  faBroadcastTower,
+  faBars,
+  faMicrophoneAlt
+);
 
 const history = createBrowserHistory();
 

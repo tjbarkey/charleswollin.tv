@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import Header from "./Header";
 import ContentList from "./posts/ContentList";
@@ -7,6 +7,7 @@ import { Route, NavLink, Redirect, useRouteMatch } from "react-router-dom";
 import "../css/Content.css";
 import ReactHtmlParser from "react-html-parser";
 import Player from "./Player";
+import Footer from "./Footer";
 
 const Content = () => {
   const [articleState, setArticleState] = useState({
@@ -17,8 +18,10 @@ const Content = () => {
   const [playerState, setPlayerState] = useState({ isVisible: false });
   let match = useRouteMatch("/content/type");
 
+  const playerRef = useRef();
   const clickHandler = link => {
     setPlayerState({ isVisible: true, link: link });
+    window.scrollTo(0, playerRef.current.offsetTop);
   };
 
   const resetPlayer = () => {
@@ -109,7 +112,7 @@ const Content = () => {
             {ReactHtmlParser(contentState.data.pageContent)}
           </div>
           <div>
-            <div className="course-nav">
+            <div className="course-nav" ref={playerRef}>
               <ul>
                 <li onClick={resetPlayer}>
                   <NavLink to={`${match.url}/video`}>Videos</NavLink>
@@ -166,6 +169,7 @@ const Content = () => {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     );
   } else {

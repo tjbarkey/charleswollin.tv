@@ -7,10 +7,9 @@
   transform: translateX(-50%);
 }
 
-.icn {
+.icnf {
   font-size: 14px;
   position: relative;
-  transform: translateY(2.5px);
 }
 .icns {
   font-size: 30px;

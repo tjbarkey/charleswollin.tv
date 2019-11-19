@@ -27,6 +27,9 @@
 .f {
   fill: #ed1c24;
 }
+.g {
+  fill: none;
+}
 
 .overlay {
   width: 55vh;
@@ -47,7 +50,7 @@
 .home-image {
   height: 110vh;
   width: auto;
-  position: relative;
+  position: absolute;
   left: 50%;
   top: -5%;
   transform: translateX(-50%);
@@ -79,6 +82,9 @@
     top: -5%;
     transform: translateX(-50%);
     z-index: 1;
+  }
+  .g {
+    fill: rgba(255, 255, 255, 1);
   }
 }
 

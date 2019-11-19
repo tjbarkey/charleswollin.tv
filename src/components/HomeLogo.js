@@ -7,10 +7,10 @@ const Home = () => {
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286 285.75">
       <path
         d="M283.5 142.85A140.5 140.5 0 1 1 143 2.5a140.44 140.44 0 0 1 140.5 140.35"
-        fill="none"
         stroke="#ed1c24"
         strokeMiterlimit="10"
         strokeWidth="5"
+        className="g"
       />
       <path
         className="b"

@@ -15,10 +15,9 @@ import Blog from "./Blog";
 import BlogTagged from "./BlogTagged";
 import BlogPost from "./BlogPost";
 import WorldCup from "./WorldCup";
-import ReactGA from "react-ga";
+import GA from "./GoogleAnalytics";
 import Header from "./Header";
 import Footer from "./Footer";
-import { createBrowserHistory } from "history";
 import "../css/App.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -39,19 +38,10 @@ library.add(
   faMicrophoneAlt
 );
 
-const history = createBrowserHistory();
-
-// Initialize google analytics page view tracking
-history.listen(location => {
-  ReactGA.set({ page: location.pathname }); // Update the user's current page
-  ReactGA.pageview(location.pathname); // Record a pageview for the given page
-});
-const trackingId = "UA-120634577-1"; // Replace with your Google Analytics tracking ID
-ReactGA.initialize(trackingId);
-
 const App = () => {
   return (
-    <BrowserRouter history={history}>
+    <BrowserRouter>
+      {GA.init() && <GA.RouteTracker />}
       <div>
         <Switch>
           <Route exact path="/" component={Home} />

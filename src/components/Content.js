@@ -104,7 +104,7 @@ const Content = () => {
               />
             </div>
           </div>
-          <div className="accessible-reading">
+          <div className="accessible-reading long-bottom">
             <h1>
               {contentState.data.title}
               <hr />

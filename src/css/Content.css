@@ -25,6 +25,10 @@
   display: block;
 }
 
+.long-bottom {
+  margin-bottom: 3em;
+}
+
 @media screen and (max-width: 760px) {
   .floater {
     width: 22em;

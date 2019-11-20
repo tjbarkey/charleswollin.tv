@@ -26,11 +26,12 @@ iframe {
 button {
   font-size: 0.85em;
   color: black;
-  padding: 0.2em 0.8em;
+  padding: 0.3em 0.8em;
   border-radius: 0.25em;
   background: lightgray;
   transition: 0.2s;
   float: right;
+  border-style: none;
 }
 button:hover,
 button.active {

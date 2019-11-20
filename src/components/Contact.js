@@ -65,7 +65,62 @@ const Contact = () => {
             {contactState.data.title}
             <hr />
           </h1>
-          <p>{ReactHtmlParser(contactState.data.pageContent)}</p>
+          <p className="paraboveform">
+            {ReactHtmlParser(contactState.data.pageContent)}
+          </p>
+
+          <form
+            id="gform"
+            method="POST"
+            action="https://formspree.io/charleswollinfanmail@gmail.com"
+          >
+            <div className="unit">
+              <label htmlFor="name" className="label-form">
+                Name
+              </label>
+              <input type="text" name="name" id="name" className="input-form" />
+            </div>
+            <div className="unit">
+              <label htmlFor="email" className="label-form">
+                Email
+              </label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                className="input-form"
+              />
+            </div>
+            <div className="unit-bottom">
+              <label htmlFor="message" className="label-form">
+                Message
+              </label>
+
+              <textarea
+                name="message"
+                id="message"
+                rows="4"
+                className="text-form"
+              ></textarea>
+
+              <ul className="actions">
+                <li>
+                  <input
+                    type="submit"
+                    value="Submit"
+                    className="special-inputs first"
+                  />
+                </li>
+                <li>
+                  <input
+                    type="reset"
+                    value="Reset"
+                    className="special-inputs"
+                  />
+                </li>
+              </ul>
+            </div>
+          </form>
         </div>
         <Footer />
       </div>

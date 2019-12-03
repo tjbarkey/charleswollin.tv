@@ -1,68 +1,35 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
 
-## Available Scripts
+### `Intro`
 
-In the project directory, you can run:
+This site is hosted at http://www.charleswollin.com.
 
-### `yarn start`
+Charles needed a new website to act as a landing page for potential clients, as well as fans and friends, to showcase his extensive work in the sports broadcasting field and give him control of the site's content in an easy to use online interface.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### `Technologies Used`
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+-Strapi CMS
+-Single Page CreateReactApp App
+-React with Hooks
+-React Router
+-ES6
+-RESTful APIs
+-Heroku (backend/CMS/database hosting)
+-Netlify (front end hosting)
+-PostgreSQL
+-AWS Bucket for Image Serving
+-Google Analytics
 
-### `yarn test`
+### `Process`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I broke down the project needs into chunks: Database, CMS, Hosting, Frontend Components, Rendering/Routing.
 
-### `yarn build`
+I knew that I wanted to create a lightweight headless CMS that would populate all of the site's information and blog posts, and that gave me control over how that information was served. I landed on Strapi because it's a new, Node based open source CMS with decent documentation and an active community of developers. It was easy to learn and set up and I had a functioning backend API up and running in no time on Heroku, which I chose because of the speed and simplicity of setup, and because of the ability to automate deployment with Git updates. I decided to use a Postgres database in favor of the trending NoSQL options because I knew I'd be adding fields and manipulating the database as I developed the frontend, and the more strict nature of Postgres meant less opportunity for bugs.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I chose to build the frontend of the app with CreateReactApp because, as someone who is building projects and trying to make a career transition while working an engineering job that requires 60+ hours a week, time is of the essence, and I don't have time to muddle my way through setting up WebPack and other dependencies and file structures. I decided to learn the Hooks method of writing React because it seemed like the latest trend in React, and I want to stay on trend as I make this transition. It was a pretty straightforward process, save for a few hiccups in passing callbacks into deeply nested components, because I've coded several straightforward apps in React with Classes prior to this project. I handled the routing with React Router.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+I tried to build reusable components as much as possible throughout the process. I realized after coding this app that there are lots of areas that can be refactored into simpler, more maintainable and readable code, but again, time is of the essence for me as I'm working full time and I'm more focused on building lots of things at the moment to show off my versatility.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+I did most of the visual design after I built the initial components that would fetch server data and put it in place. I used sketch to assist with designing layouts and margins, etc. I used Illustrator to create custom SVG components and the logo. I've fielded some initial feedback from users (my friends) and have made minor changes to design and functionality accordingly.
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+There are still some minor issues that I'd like to work out when I get more time, but I'm fairly proud of my first fullstack, production quality app that I coded from scratch. It gets a solid 95% efficiency rating on desktop (75% on mobile) from Google.

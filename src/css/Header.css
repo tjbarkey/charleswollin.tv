@@ -13,15 +13,7 @@
   margin-right: 0.1em;
   transform: translateY(-1px);
 }
-.sutroa {
-  position: relative;
-  transform: translateY(1px);
-  margin-right: 0.1em;
-  height: 23px;
-  width: 23px;
-  display: inline-block;
-  fill: white;
-}
+
 .a {
   stroke: #fff;
   fill: #fff;

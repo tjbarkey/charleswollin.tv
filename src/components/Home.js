@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import Header from "./Header";
 import HomeSpinner from "./HomeSpinner";
@@ -43,21 +44,23 @@ const Home = () => {
     return (
       <div>
         <Header className="head" />
-        <div className="homebody">
-          <img
-            src={homeState.data.mainImage.url}
-            className="home-image"
-            alt="home"
-          />
-          <div className="overlay2">
-            <HomeLogo />
-          </div>
-          <div className="overlay">
-            <div className="spin">
-              <HomeSpinner opacity="50%" />
+        <Link to="/about">
+          <div className="homebody">
+            <img
+              src={homeState.data.mainImage.url}
+              className="home-image"
+              alt="home"
+            />
+            <div className="overlay2">
+              <HomeLogo />
+            </div>
+            <div className="overlay">
+              <div className="spin">
+                <HomeSpinner opacity="50%" />
+              </div>
             </div>
           </div>
-        </div>
+        </Link>
       </div>
     );
   }

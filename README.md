@@ -34,4 +34,6 @@ I tried to build reusable components as much as possible throughout the process.
 
 I did most of the visual design after I built the initial components that would fetch server data and put it in place. I used sketch to assist with designing layouts and margins, etc. I used Illustrator to create custom SVG components and the logo. I've fielded some initial feedback from users (my friends) and have made minor changes to design and functionality accordingly.
 
+![Image of charleswollin.com](/public/screenshot2.png)
+
 There are still some minor issues that I'd like to work out when I get more time, but I'm fairly proud of my first fullstack, production quality app that I coded from scratch. It gets a solid 95% efficiency rating on desktop (75% on mobile) from Google.

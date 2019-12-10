@@ -1,5 +1,7 @@
 ## Project Overview
 
+![Image of charleswollin.com](/public/screenshot.png)
+
 ### `Intro`
 
 This site is hosted at http://www.charleswollin.com.
@@ -8,17 +10,17 @@ Charles needed a new website to act as a landing page for potential clients, as 
 
 ### `Technologies Used`
 
--Strapi CMS
--Single Page CreateReactApp App
--React with Hooks
--React Router
--ES6
--RESTful APIs
--Heroku (backend/CMS/database hosting)
--Netlify (front end hosting)
--PostgreSQL
--AWS Bucket for Image Serving
--Google Analytics
+- Strapi CMS
+- Single Page CreateReactApp App
+- React with Hooks
+- React Router
+- ES6
+- RESTful APIs
+- Heroku (backend/CMS/database hosting)
+- Netlify (front end hosting)
+- PostgreSQL
+- AWS Bucket for Image Serving
+- Google Analytics
 
 ### `Process`
 
